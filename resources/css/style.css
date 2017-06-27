@@ -4,6 +4,20 @@ html {
 
 body  {
   font-family: helvetica;
+  
+}
+
+.sitecontainer{
+  width:960px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  padding:auto 10rem;
+  overflow: visible;
+}
+
+div {
+  border: 1.5px green solid;
 }
 
 .header {
@@ -81,21 +95,74 @@ nav span {
   flex-direction: row;
   justify-content: space-between;
   margin-top:3rem;
+  width:100%;
 }
 
 .pen,.watch,.glasses{
   flex-direction: column;
-  border: 4px solid black;
-  padding:2rem;
   display:flex;
-
 }
 
 #pen,#watch,#glasses {
   height:9rem;
+  border: 4px solid black;
+  padding:2rem;
   }
 
-  .pen span{
+  .pen span, .watch span, .glasses span{
     color:white;
     background-color: black;
+    padding: 0.5rem;
+    text-align:center;
   }
+
+.glasses {
+  height:9rem;
+  width:30%;
+}
+
+.contact {
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.locations,.hours{
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 4rem;
+  width:35%;
+}
+
+#locations,#hours {
+  background-color: black;
+  color:white;
+  margin-top:3rem;
+  padding-left: 2rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  text-align: left;
+
+}
+
+footer {
+  height:8rem;
+  width:100%;
+  text-align:left;
+  color:white;
+  background-color: black;
+  align-items: center;
+  display:flex;
+  }
+
+
+
+
+
+
+
+/*@media screen only and (min-width:940px){
+  .body {
+    justify-content: center;
+  }
+}*/
