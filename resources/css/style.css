@@ -1,0 +1,101 @@
+html {
+  font-size: 18px;
+}
+
+body  {
+  font-family: helvetica;
+}
+
+.header {
+  display: flex;
+  background-color: black;
+  color: white;
+  width:100%;
+  overflow: visible;
+
+  }
+
+#logo{
+  height:1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-top: .33rem;
+
+}
+
+#secret {
+  margin: 0.66rem 0;
+}
+
+
+
+.header2 {
+
+  display:flex;
+  flex-direction: column;
+  background-image: url(../images/moto.jpeg);
+  height:25rem;
+  background-size: cover;
+}
+
+#new {
+  font-size: 1rem;
+  font-weight: bold;
+  color:white;
+  background-color: black;
+  margin-top:9rem;
+  padding-top:2rem;
+  padding-left:3rem;
+  width:20rem;
+  padding-bottom: 0.25rem;
+}
+
+#sport {
+  font-size: 2rem;
+  font-weight: bold;
+  color:white;
+  background-color: black;
+  padding-left:3rem;
+  width:20rem;
+  padding-bottom: 2rem;
+}
+
+
+nav{
+  display:flex;
+  padding: 0.75rem auto;
+}
+
+nav span {
+  background-color:firebrick;
+  color:white;
+  justify-content: space-around;
+  width:100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+
+.gallery{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:3rem;
+}
+
+.pen,.watch,.glasses{
+  flex-direction: column;
+  border: 4px solid black;
+  padding:2rem;
+  display:flex;
+
+}
+
+#pen,#watch,#glasses {
+  height:9rem;
+  }
+
+  .pen span{
+    color:white;
+    background-color: black;
+  }
