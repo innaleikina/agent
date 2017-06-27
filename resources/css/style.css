@@ -4,37 +4,36 @@ html {
 
 body  {
   font-family: helvetica;
-  
-}
-
-.sitecontainer{
-  width:960px;
-  margin-left: 40px;
-  display: flex;
-  flex-direction: column;
-  padding:auto 10rem;
-  overflow: visible;
 }
 
 div {
   border: 1.5px green solid;
 }
 
-.header {
-  display: flex;
+.company {
   background-color: black;
   color: white;
-  width:100%;
-  overflow: visible;
 
-  }
+}
+
+.container{
+  max-width:960px;
+  margin: 0 auto;
+  display:flex;
+}
+
+.header {
+  display:flex;
+  flex-direction: column;
+
+}
+
 
 #logo{
   height:1.5rem;
   margin-left: 0.5rem;
   margin-right: 1rem;
   margin-top: .33rem;
-
 }
 
 #secret {
@@ -42,22 +41,28 @@ div {
 }
 
 
-
-.header2 {
-
-  display:flex;
-  flex-direction: column;
+ .header2 {
   background-image: url(../images/moto.jpeg);
   height:25rem;
   background-size: cover;
+  flex-direction: column;
 }
 
-#new {
-  font-size: 1rem;
+  .arrival {
+  display:flex;
+  flex-direction:column;
+  max-width:960px;
   font-weight: bold;
+  margin-top:9rem;
+  align-items: flex-start;
+  background-color: black;
+}
+
+  #new {
+  flex-direction: column;
+  font-size: 1rem;
   color:white;
   background-color: black;
-  margin-top:9rem;
   padding-top:2rem;
   padding-left:3rem;
   width:20rem;
@@ -65,25 +70,32 @@ div {
 }
 
 #sport {
+  flex-direction: column;
   font-size: 2rem;
-  font-weight: bold;
   color:white;
   background-color: black;
   padding-left:3rem;
-  width:20rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2rem;*/
 }
 
 
-nav{
+.container nav{
   display:flex;
   padding: 0.75rem auto;
+  width:960px;
+
 }
+
+  .nav {
+
+  background-color: firebrick;
+}
+
 
 nav span {
   background-color:firebrick;
   color:white;
-  justify-content: space-around;
+
   width:100%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -107,6 +119,19 @@ nav span {
   height:9rem;
   border: 4px solid black;
   padding:2rem;
+  }
+
+  .glasses-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    padding: 2rem 0;
+    border: 4px solid black;
+  }
+
+  .glasses-image img {
+    max-width: 8rem;
   }
 
   .pen span, .watch span, .glasses span{
