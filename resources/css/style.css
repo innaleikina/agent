@@ -6,8 +6,14 @@ body  {
   font-family: helvetica;
 }
 
-div {
-  border: 1.5px green solid;
+/*div {
+ border: 1.5px green solid;*/
+}
+
+.logo {
+  margin: 0.66rem 0;
+  align-items: center;
+  display: flex;
 }
 
 .company {
@@ -37,7 +43,8 @@ div {
 }
 
 #secret {
-  margin: 0.66rem 0;
+  align-content:center;
+  justify-content: flex-start !important;
 }
 
 
@@ -45,8 +52,7 @@ div {
   background-image: url(../images/moto.jpeg);
   height:25rem;
   background-size: cover;
-  flex-direction: column;
-}
+  }
 
   .arrival {
   display:flex;
@@ -66,7 +72,7 @@ div {
   padding-top:2rem;
   padding-left:3rem;
   width:20rem;
-  padding-bottom: 0.25rem;
+
 }
 
 #sport {
@@ -75,7 +81,8 @@ div {
   color:white;
   background-color: black;
   padding-left:3rem;
-  padding-bottom: 2rem;*/
+  padding-bottom: 2rem;
+  padding-top: 0.25rem;
 }
 
 
@@ -83,23 +90,25 @@ div {
   display:flex;
   padding: 0.75rem auto;
   width:960px;
-
-}
+  }
 
   .nav {
-
   background-color: firebrick;
-}
+  }
 
 
-nav span {
+  nav span {
   background-color:firebrick;
   color:white;
-
-  width:100%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+
+.container, span.sp {
+  justify-content: space-between;
+}
+
+
 
 
 .gallery{
@@ -107,7 +116,7 @@ nav span {
   flex-direction: row;
   justify-content: space-between;
   margin-top:3rem;
-  width:100%;
+  width:960px;
 }
 
 .pen,.watch,.glasses{
@@ -115,10 +124,11 @@ nav span {
   display:flex;
 }
 
-#pen,#watch,#glasses {
+#pen,#watch{
   height:9rem;
   border: 4px solid black;
   padding:2rem;
+
   }
 
   .glasses-image {
@@ -128,10 +138,15 @@ nav span {
     height: 9rem;
     padding: 2rem 0;
     border: 4px solid black;
-  }
+    }
+
+    .glasses,.watch,.pen{
+      width: 30%;
+    }
 
   .glasses-image img {
-    max-width: 8rem;
+    width: 8rem;
+
   }
 
   .pen span, .watch span, .glasses span{
@@ -141,22 +156,34 @@ nav span {
     text-align:center;
   }
 
-.glasses {
-  height:9rem;
-  width:30%;
-}
+
+
+
+
 
 .contact {
   display:flex;
-  justify-content: space-between;
-  width:100%;
+
+
 }
 
 .locations,.hours{
   flex-direction: column;
   display: flex;
   margin-bottom: 4rem;
-  width:35%;
+  width:960px;
+  border: 1.5px green solid;
+}
+
+.hours {
+  display:flex;
+}
+
+.hours>span {
+  justify-content: flex-end;
+  border: 1.5px green solid;
+
+
 }
 
 #locations,#hours {
@@ -167,19 +194,27 @@ nav span {
   padding-top:1rem;
   padding-bottom:1rem;
   text-align: left;
+  width:35%;
 
 }
 
 footer {
   height:8rem;
   width:100%;
-  text-align:left;
+  justify-content: flex-start;
   color:white;
   background-color: black;
   align-items: center;
   display:flex;
+
   }
 
+
+
+  footer .container {
+    justify-content: flex-start;
+    width:960px;
+  }
 
 
 
