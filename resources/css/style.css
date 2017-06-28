@@ -86,10 +86,10 @@ body  {
 }
 
 
-.container nav{
+.container>nav{
   display:flex;
   padding: 0.75rem auto;
-  width:960px;
+
   }
 
   .nav {
@@ -104,7 +104,7 @@ body  {
   padding-bottom: 0.75rem;
 }
 
-.container, span.sp {
+.container,span.sp {
   justify-content: space-between;
 }
 
@@ -112,48 +112,41 @@ body  {
 
 
 .gallery{
-  display:flex;
+  display:inline-flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top:3rem;
   width:960px;
+  border: 1.5px green solid;
 }
 
-.pen,.watch,.glasses{
+.gallery>.glasses{
+  align-content:stretch;
+}
+
+ .pen,.watch,.glasses{
   flex-direction: column;
   display:flex;
-}
+  max-width: 30%;
+  border: 1.5px green solid;
 
-#pen,#watch{
-  height:9rem;
+  }
+
+
+ #pen,#watch,#glasses{
   border: 4px solid black;
   padding:2rem;
+  max-width: 8rem;
+ }
 
-  }
 
-  .glasses-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 9rem;
-    padding: 2rem 0;
-    border: 4px solid black;
-    }
 
-    .glasses,.watch,.pen{
-      width: 30%;
-    }
-
-  .glasses-image img {
-    width: 8rem;
-
-  }
-
-  .pen span, .watch span, .glasses span{
+   .pen>span, .watch>span, .glasses>span{
     color:white;
     background-color: black;
     padding: 0.5rem;
     text-align:center;
+
   }
 
 
@@ -163,7 +156,7 @@ body  {
 
 .contact {
   display:flex;
-  border: 1.5px green solid;
+
   }
 
 .locations,.hours{
@@ -176,11 +169,11 @@ body  {
 
 .container>.hours {
   display: flex;
-  border: 1.5px green solid;
+  
 }
 
 .hours {
-  display: flex;
+  display: block;
   justify-content: flex-end;
 }
 
