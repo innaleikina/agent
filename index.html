@@ -33,7 +33,7 @@
 
 
 
-      <nav class="nav">
+      <!-- <nav class="nav">
         <div class="container">
           <span class="sp"> Eyewear </span>
           <span class="sp"> Apparel </span>
@@ -41,7 +41,21 @@
           <span class="sp"> Vehicles </span>
           <span class="sp"> Glasses </span>
           <span class="sp"> Contact </span>
-        </div>
+        </div> -->
+
+        <nav>
+          <ul class="container">
+            <li> Eyewear </li>
+            <li> Apparel </li>
+            <li>Gadegets </li>
+            <li>Vehicles </li>
+            <li> Classes </li>
+            <li> Contact </li>
+          </ul>
+        </ul>
+        <ul class="mobile-nav container">
+          <li> Menu </li>
+        </ul>
       </nav>
 
 
@@ -50,19 +64,26 @@
 
       <div class="container">
          <div class="gallery">
+
            <div class="pen">
-             <img id="pen" src="./resources/images/pen.png"/>
+             <div class="watchimage">
+               <img id="pen" src="./resources/images/pen.png"/>
+             </div>
              <span>Exploding Pen </span>
            </div>
 
            <div class="watch">
-             <img id="watch" src="./resources/images/watch.png"/>
+             <div class="watchimage">
+               <img id="watch" src="./resources/images/watch.png"/>
+             </div>
              <span> Cellular Watch </span>
           </div>
 
             <div class="glasses">
+              <div class="glassesimage">
                 <img id="glasses" src="./resources/images/glasses.png"/>
-                <span> Thermal Glasses </span>
+              </div>
+              <span> Thermal Glasses </span>
             </div>
           </div>
         </div>
@@ -72,17 +93,18 @@
 
 
     <div class="contact">
-     <div class="container">
+      <div class="container">
+       <div class="one">
+        <div class="locations">
+          <p id="locations"> Locations </p>
+          <p> -47.346436, 84.32354 </p>
+        </div>
 
-      <div class="locations">
-       <span id="locations"> Locations </span>
-       <span> -47.346436, 84.32354 </span>
-      </div>
-
-      <div class="hours">
-        <span id="hours"> Hours </span>
-        <span > 0800-1800 </span>
-      </div>
+        <div class="hours">
+          <p id="hours"> Hours </p>
+          <p> 0800-1800 </p>
+        </div>
+        </div>
      </div>
     </div>
   </div>
