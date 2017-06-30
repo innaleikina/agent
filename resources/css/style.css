@@ -206,8 +206,12 @@ footer {
 
 @media only screen and (max-width:1024px){
 
-  body{
+/*  body{
     overflow-x: hidden;
+  }*/
+
+  .container {
+    max-width: 1024px;
   }
 
 nav ul {
@@ -216,6 +220,10 @@ nav ul {
 .mobile-nav {
   display:flex;
   justify-content: center;
+  }
+
+  nav {
+    width:auto;
   }
 
 
@@ -237,8 +245,12 @@ nav ul {
 
 @media only screen and (max-width:470px){
 
-  body{
+  /*body{
     overflow-x: hidden;
+  }*/
+
+  .container {
+    max-width: 470px;
   }
 
   .watch,.glasses {
@@ -290,7 +302,39 @@ nav ul {
 
     .logo {
       justify-content: center;
-      max-width:470px;
-      padding: 0;
+      width: auto;
+
     }
+
+    .company{
+    width:auto;
+    }
+
+    .header2 {
+      height: 15rem;
+    }
+
+    .arrival{
+    width: auto;
+    align-content: flex-end;
+    }
+
+    #new {
+      padding-top:1rem;
+      padding-left: 2rem;
+    }
+
+    #sport {
+      padding-left:2rem;
+    }
+
+    .mobile-nav {
+      z-index: 2;
+    }
+
+    nav {
+      z-index: 2;
+    }
+
+
 }
