@@ -275,4 +275,22 @@ nav ul {
     .copyright {
      text-align:center;
         }
+
+    #new {
+      font-size:0.77rem;
+    }
+
+    #sport {
+      font-size:1rem;
+    }
+
+    #secret {
+      display:none;
+    }
+
+    .logo {
+      justify-content: center;
+      max-width:470px;
+      padding: 0;
+    }
 }
